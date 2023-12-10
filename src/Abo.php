@@ -9,8 +9,6 @@ require(__DIR__ . "/../abo/account/file.php");
 
 class Abo
 {
-    // Build your next great package.
-
     public function __construct()
     {
     }
