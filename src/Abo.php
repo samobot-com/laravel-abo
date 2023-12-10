@@ -2,10 +2,10 @@
 
 namespace SamobotCom\LaravelAbo;
 
-require(__DIR__ . "../abo.php");
-require(__DIR__ . "../abo/group.php");
-require(__DIR__ . "../abo/item.php");
-require(__DIR__ . "../abo/account/file.php");
+require(__DIR__ . "/../abo.php");
+require(__DIR__ . "/../abo/group.php");
+require(__DIR__ . "/../abo/item.php");
+require(__DIR__ . "/../abo/account/file.php");
 
 class Abo
 {
@@ -13,11 +13,10 @@ class Abo
 
     public function __construct()
     {
-        $this->abo = new \abo();
     }
 
-    public function test()
+    public function abo()
     {
-        return [];
+        return new \abo();
     }
 }

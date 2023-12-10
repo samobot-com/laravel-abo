@@ -47,7 +47,7 @@
                 "SamobotCom\\LaravelAbo\\AboServiceProvider"
             ],
             "aliases": {
-                "Abo": "SamobotCom\\LaravelAbo\\AboFacade"
+                "Abo": "SamobotCom\\LaravelAbo\\Facade\\Abo"
             }
         }
     }

@@ -1,13 +1,13 @@
 <?php
 
-namespace SamobotCom\LaravelAbo;
+namespace SamobotCom\LaravelAbo\Facade;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
  * @see \SamobotCom\LaravelAbo\Skeleton\SkeletonClass
  */
-class AboFacade extends Facade
+class Abo extends Facade
 {
     /**
      * Get the registered name of the component.
