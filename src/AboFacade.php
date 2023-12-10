@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Facade;
 /**
  * @see \SamobotCom\LaravelAbo\Skeleton\SkeletonClass
  */
-class LaravelAboFacade extends Facade
+class AboFacade extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -16,6 +16,6 @@ class LaravelAboFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'laravel-abo';
+        return 'abo';
     }
 }

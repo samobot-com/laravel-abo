@@ -44,10 +44,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "SamobotCom\\LaravelAbo\\LaravelAboServiceProvider"
+                "SamobotCom\\LaravelAbo\\AboServiceProvider"
             ],
             "aliases": {
-                "LaravelAbo": "SamobotCom\\LaravelAbo\\LaravelAboFacade"
+                "Abo": "SamobotCom\\LaravelAbo\\AboFacade"
             }
         }
     }

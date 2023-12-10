@@ -4,7 +4,7 @@ namespace SamobotCom\LaravelAbo;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelAboServiceProvider extends ServiceProvider
+class AboServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -53,8 +53,8 @@ class LaravelAboServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'laravel-abo');
 
         // Register the main class to use with the facade
-        $this->app->singleton('laravel-abo', function () {
-            return new LaravelAbo;
+        $this->app->singleton('abo', function () {
+            return new Abo;
         });
     }
 }
