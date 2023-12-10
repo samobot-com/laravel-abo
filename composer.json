@@ -1,0 +1,54 @@
+{
+    "name": "samobot-com/laravel-abo",
+    "description": "Composer / Laravel package for ABO file format generator",
+    "keywords": [
+        "samobot-com",
+        "laravel-abo"
+    ],
+    "homepage": "https://github.com/samobot-com/laravel-abo",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Lubor Nosek",
+            "email": "lubor@samobot.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SamobotCom\\LaravelAbo\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SamobotCom\\LaravelAbo\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SamobotCom\\LaravelAbo\\LaravelAboServiceProvider"
+            ],
+            "aliases": {
+                "LaravelAbo": "SamobotCom\\LaravelAbo\\LaravelAboFacade"
+            }
+        }
+    }
+}
